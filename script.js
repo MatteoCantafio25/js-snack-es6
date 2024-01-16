@@ -3,6 +3,46 @@
 
 console.log("JS OK");
 
+
+//! PRIMO ESERCIZIO
+
+// CREO UNA COSTANTE PER DARE UN NOME AD OGNI TAVOLO
+const tableName = 'Tavolo Vip';
+
+
+// CREO L'ARRAY CON TUTTI I NOMI DEI VIPS
+const guests = [
+    'Brad Pitt',
+    'Johnny Depp',
+    'Lady Gaga',
+    'Cristiano Ronaldo',
+    'Georgina Rodriguez',
+    'Chiara Ferragni',
+    'Fedez',
+    'George Clooney',
+    'Amal Clooney',
+    'Maneskin'
+];
+
+
+// USO UN MAP PER CREARE UN NUOVO ARRAY CONTENENTE UN OGGETTO CON SPECIFICI ATTRIBUTI PER OGNI SINGOLO INVITATO
+const guestsList = guests.map((guest, index) => {
+    return {
+        tableName: tableName,
+        Name: guest,
+        seat: index + 1
+    };
+});
+
+// STAMPO IN CONSOLE
+
+console.log(guestsList);
+
+
+
+//! SECONDO ESERCIZIO
+
+
 // SCRIVO L'ARRAY DI OGGETTI
 const students = [
     { id: 213, name: "Marco della Rovere", grades: 78 },
@@ -34,7 +74,5 @@ const upperNames = students.map(({ name }) => {
 
 // STAMPO IN CONSOLE
 console.log(upperNames);
-
-
 
 
