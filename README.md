@@ -1,5 +1,13 @@
 # ESERCIZIO Snack Array Methods
 
+## Esercizio 1
+
+- Creo una costante per dare un nome ad ogni tavolo
+- Creo una lista con tutti i nomi dei vips
+- Tramite la funzione map creo una lista di oggetti con specifici attributi per ogni singolo invitato
+- Stampo in console
+
+
 ## Esercizio 2
 
 - Scrivo l'array di oggetti
