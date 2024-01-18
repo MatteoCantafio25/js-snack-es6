@@ -209,7 +209,6 @@ const teams = [
 
 const minNumber = 1;
 const maxNumber = 30;
-const { sf } = teams
 
 // CICLO L' ARRAY ORIGINALE PER ASSEGNARE UN NUMERO RANDOM A MP = (MADE POINTS) E SF = (SUFFERED FOULS)
 for (let i = 0; i < teams.length; i++) {
@@ -218,17 +217,13 @@ for (let i = 0; i < teams.length; i++) {
     team.sf = getRandomNumber(minNumber, maxNumber);
 }
 
-console.log(sf)
 // STAMPO IN CONSOLE
 console.log(teams);
 
 // CREO UN NUOVO ARRAY SENZA TOCCARE L'ORIGINALE PER AVERE SOLO PARAMETRI DECISI DA ME
-const teamFouls = teams.map(({ name }) => {
+const teamFouls = teams.map(({ name, sf }) => {
     // CREO IL NUOVO OGGETTO CHE ANDRA' NELL'ARRAY
-    return {
-        Nome: name,
-        sf: getRandomNumber(minNumber, maxNumber),
-    };
+    return { name, sf };
 });
 
 // STAMPO IN CONSOLE
